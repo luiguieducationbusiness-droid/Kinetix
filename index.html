@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boost Gummy - Energía Sostenible para Estudiantes</title>
+    <!-- Carga de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="images/Logo-Kinetix.svg" rel="icon" />
+    <!-- Configuración para un estilo moderno y la fuente Inter -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fb; /* Fondo muy claro */
+            overflow-x: hidden;
+        }
+
+        /* Clases de animación personalizadas */
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .fade-in-up.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Estilo para el botón de CTA */
+        .cta-button {
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px -5px rgba(109, 40, 217, 0.4); /* Sombra púrpura */
+        }
+        .cta-button:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 15px 30px -5px rgba(109, 40, 217, 0.6);
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-boost': '#6D28D9', // Púrpura vibrante
+                        'secondary-boost': '#34D399', // Verde menta
+                        'accent-boost': '#FBBF24', // Amarillo enérgico
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="text-gray-800">
+
+    <!-- Navbar Sencillo -->
+    <header class="sticky top-0 z-50 bg-white bg-opacity-95 shadow-md backdrop-blur-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-extrabold text-primary-boost tracking-tighter">
+                Kinetix Gummy
+            </h1>
+            <nav class="hidden md:flex space-x-6 text-sm font-medium">
+                <a href="#beneficios" class="hover:text-secondary-boost transition duration-200">Beneficios</a>
+                <a href="#sostenibilidad" class="hover:text-secondary-boost transition duration-200">Eco-Friendly</a>
+                <a href="#faqs" class="hover:text-secondary-boost transition duration-200">FAQs</a>
+                <a href="#faqs" class="px-4 py-1.5 bg-primary-boost text-white rounded-full hover:bg-opacity-90 transition duration-200">¡Pruébalas Ya!</a>
+            </nav>
+            <!-- Botón de Menú para Móvil (Solo placeholder visual) -->
+            <button class="md:hidden text-primary-boost focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. Sección Hero - La Energía que necesitas -->
+        <section class="relative pt-16 pb-24 lg:pt-32 lg:pb-40 bg-gradient-to-br from-primary-boost/10 to-secondary-boost/10 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center justify-between">
+                
+                <!-- Contenido de Texto -->
+                <div class="lg:w-1/2 mb-12 lg:mb-0 text-center lg:text-left fade-in-up">
+                    <span class="text-lg font-semibold text-secondary-boost uppercase tracking-widest bg-white/50 px-3 py-1 rounded-full shadow-md inline-block mb-3">
+                        ¡Boost Your Study!
+                    </span>
+                    <h2 class="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-6 text-primary-boost">
+                        Tu <span class="text-secondary-boost block lg:inline">Concentración.</span> Tu <span class="text-accent-boost block lg:inline">Planeta.</span>
+                    </h2>
+                    <p class="text-xl text-gray-600 mb-8 max-w-lg mx-auto lg:mx-0">
+                        Gomitas energizantes sostenibles. La dosis perfecta de enfoque, natural y sin el temblor del café. ¡Ideal para maratones de estudio!
+                    </p>
+                    <a id="comprar" href="#faqs" class="cta-button inline-block px-10 py-4 text-lg font-bold text-white bg-primary-boost rounded-xl transition duration-300 transform hover:bg-primary-boost/90">
+                        Compra la Bolsa Eco
+                    </a>
+                </div>
+
+                <!-- Imagen/Placeholder del Producto -->
+                <div class="lg:w-1/2 flex justify-center fade-in-up" style="transition-delay: 0.2s;">
+                    <!-- Placeholder para la bolsa de gomitas y algunas gomitas sueltas -->
+                    <div class="relative w-full max-w-md">
+                        <img src="images/Gomitas.webp" 
+                            alt="Bolsa de Gomitas Energizantes Kinetix Gummy" 
+                            class="w-full h-auto rounded-3xl shadow-2xl rotate-3 transform transition duration-500 hover:rotate-0 hover:scale-[1.03] z-10"
+                            onerror="this.onerror=null; this.src='https://placehold.co/400x500/6D28D9/ffffff?text=Kinetix+Gummies%0A%5BImage+of+Gummy+Product%5D'">
+                        <!-- Elemento decorativo flotante (animación sutil) -->
+                        <div class="absolute -top-10 -right-10 w-32 h-32 bg-secondary-boost/70 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse hidden md:block"></div>
+                        <div class="absolute bottom-5 left-0 w-20 h-20 bg-accent-boost/70 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-bounce" style="animation-delay: 1s;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Sección de Beneficios Clave -->
+        <section id="beneficios" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h3 class="text-4xl font-bold mb-12 text-gray-800 fade-in-up">
+                    ¿Por qué Boost Gummy es tu aliado de estudio?
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    
+                    <!-- Beneficio 1: Enfoque Láser -->
+                    <div class="p-8 bg-gray-50 rounded-2xl shadow-lg border-t-4 border-primary-boost transform transition duration-300 hover:shadow-xl hover:-translate-y-1 fade-in-up">
+                        <div class="text-5xl text-primary-boost mb-4">🧠</div>
+                        <h4 class="text-2xl font-semibold mb-3">Enfoque Láser</h4>
+                        <p class="text-gray-600">
+                            Fórmula con ingredientes naturales que potencian tu concentración sin la ansiedad que produce el exceso de cafeína. ¡Hora de terminar ese proyecto!
+                        </p>
+                    </div>
+
+                    <!-- Beneficio 2: Energía Sostenida -->
+                    <div class="p-8 bg-gray-50 rounded-2xl shadow-lg border-t-4 border-secondary-boost transform transition duration-300 hover:shadow-xl hover:-translate-y-1 fade-in-up" style="transition-delay: 0.1s;">
+                        <div class="text-5xl text-secondary-boost mb-4">🔋</div>
+                        <h4 class="text-2xl font-semibold mb-3">Energía Sostenida</h4>
+                        <p class="text-gray-600">
+                            Di adiós a los picos y caídas de azúcar. Nuestra energía es limpia y se mantiene estable para que rindas toda la tarde.
+                        </p>
+                    </div>
+
+                    <!-- Beneficio 3: 100% Natural y Vegano -->
+                    <div class="p-8 bg-gray-50 rounded-2xl shadow-lg border-t-4 border-accent-boost transform transition duration-300 hover:shadow-xl hover:-translate-y-1 fade-in-up" style="transition-delay: 0.2s;">
+                        <div class="text-5xl text-accent-boost mb-4">🌿</div>
+                        <h4 class="text-2xl font-semibold mb-3">Natural y Delicioso</h4>
+                        <p class="text-gray-600">
+                            Elaboradas con frutas reales y extractos botánicos. Sabor increíble sin colorantes ni saborizantes artificiales. ¡Un gusto sin culpa!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Sección de Sostenibilidad -->
+        <section id="sostenibilidad" class="py-20 bg-primary-boost/90 text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center gap-12">
+                
+                <!-- Imagen de Sostenibilidad (Placeholder) -->
+                <div class="lg:w-1/2 flex justify-center fade-in-up">
+                    <img src="images/gummies-square.jpg" 
+                        alt="Packaging Ecológico y Sostenible de Kinetix Gummy" 
+                        class="rounded-3xl shadow-2xl w-full max-w-md border-8 border-white/20"
+                        onerror="this.onerror=null; this.src='https://placehold.co/500x350/ffffff/6D28D9?text=Packaging+Eco%0A%5BImage+of+Sustainable+Packaging%5D'">
+                </div>
+                
+                <!-- Contenido de Sostenibilidad -->
+                <div class="lg:w-1/2 text-center lg:text-left fade-in-up" style="transition-delay: 0.2s;">
+                    <h3 class="text-4xl font-extrabold mb-6">
+                        Comprometidos con el Planeta
+                    </h3>
+                    <p class="text-xl mb-6 opacity-90">
+                        Como estudiante, te importa el futuro. A nosotros también. Por eso, Boost Gummy es más que energía: es una elección consciente.
+                    </p>
+                    <ul class="space-y-4 text-left inline-block lg:block">
+                        <li class="flex items-start">
+                            <span class="text-secondary-boost mr-3 mt-1 text-2xl">🌍</span>
+                            <span>Empaque Biodegradable: Nuestras bolsas se descomponen sin dejar huella en el ambiente.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-secondary-boost mr-3 mt-1 text-2xl">🌱</span>
+                            <span>Ingredientes de Origen Responsable: Trabajamos con proveedores que siguen prácticas de agricultura sostenible.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-secondary-boost mr-3 mt-1 text-2xl">💧</span>
+                            <span>Producción de Bajo Impacto: Priorizamos procesos que minimizan el consumo de agua y energía.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Sección de Llamada a la Acción Final/FAQs -->
+        <section id="faqs" class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h3 class="text-4xl font-bold mb-12 text-gray-800 fade-in-up">
+                    ¿Lista(o) para potenciar tu rendimiento?
+                </h3>
+
+                <!-- FAQ Simple (para más información) -->
+                <div class="max-w-4xl mx-auto space-y-4 text-left mb-12 fade-in-up" style="transition-delay: 0.1s;">
+                    <div class="p-5 bg-white rounded-xl shadow-lg border border-gray-100">
+                        <h4 class="font-bold text-lg text-primary-boost mb-1">¿Cuántas debo tomar antes de un examen?</h4>
+                        <p class="text-gray-600 text-sm">Recomendamos 1 a 2 gomitas, unos 20 minutos antes de comenzar tu sesión intensa de estudio o examen. ¡No excedas la dosis diaria recomendada!</p>
+                    </div>
+                    <div class="p-5 bg-white rounded-xl shadow-lg border border-gray-100">
+                        <h4 class="font-bold text-lg text-primary-boost mb-1">¿Contiene mucha azúcar o taurina?</h4>
+                        <p class="text-gray-600 text-sm">No usamos taurina y el contenido de azúcar es mínimo, proviniendo principalmente de extractos de fruta naturales. Es una alternativa mucho más saludable que las bebidas energéticas.</p>
+                    </div>
+                </div>
+
+                <!-- CTA Final -->
+                <div class="fade-in-up" style="transition-delay: 0.2s;">
+                    <a href="https://wa.me/+51930420213?text=Deseo%20adquirir%20las%20gomitas%20energizantes" target="_blank" class="cta-button inline-block px-12 py-5 text-xl font-bold text-white bg-primary-boost rounded-xl transition duration-300 transform">
+                        ¡Compra tu Pack de Estudiante Hoy!
+                    </a>
+                    <p class="mt-4 text-sm text-gray-500">
+                        Envío gratis a campus en pedidos superiores a $X.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
+            <p>&copy; 2025 Kinetix Gummy. Todos los derechos reservados.</p>
+            <p class="mt-2 text-gray-400">Hecho con energía y respeto por el medio ambiente.</p>
+            <p class="mt-2 text-gray-400">Desarrollado por &copy AgecyLazo - @LuiguiZapata.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript para activar animaciones al hacer scroll -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                rootMargin: '0px',
+                threshold: 0.1 // Activar cuando el 10% del elemento esté visible
+            });
+
+            // Selecciona todos los elementos que deben animarse
+            document.querySelectorAll('.fade-in-up').forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
+</body>
+</html>
